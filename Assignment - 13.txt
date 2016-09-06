@@ -1,3 +1,4 @@
+1.
 select first_name, last_name from student;
 +------------+-----------+
 | first_name | last_name |
@@ -15,6 +16,7 @@ select first_name, last_name from student;
 +------------+-----------+
 10 rows in set (0.00 sec)
 
+2.
 select * from student where years_of_experience < 8;
 +-----+------------+-----------+---------------------+------------+
 | id  | first_name | last_name | years_of_experience | start_date |
@@ -29,6 +31,7 @@ select * from student where years_of_experience < 8;
 +-----+------------+-----------+---------------------+------------+
 7 rows in set (0.00 sec)
 
+3.
 select last_name, start_date, id from student order by last_name asc;
 +-----------+------------+-----+
 | last_name | start_date | id  |
@@ -46,6 +49,7 @@ select last_name, start_date, id from student order by last_name asc;
 +-----------+------------+-----+
 10 rows in set (0.00 sec)
 
+4.
 select * from student where first_name = 'Adam' or first_name = 'Frank' or first_name = 'James' order by last_name desc;
 +-----+------------+-----------+---------------------+------------+
 | id  | first_name | last_name | years_of_experience | start_date |
@@ -56,6 +60,7 @@ select * from student where first_name = 'Adam' or first_name = 'Frank' or first
 +-----+------------+-----------+---------------------+------------+
 3 rows in set (0.00 sec)
 
+5.
 select first_name, last_name, start_date from student where start_date between '2016-01-01' AND '2016-06-30' order by start_date desc;
 +------------+-----------+------------+
 | first_name | last_name | start_date |
